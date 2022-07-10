@@ -11,7 +11,9 @@
   </head>
 
   <body class="bg-blue-300">
-    <%= render partial:'layouts/alerts' %>
+    <%= render partial:'layouts/navbar' if @should_render_navbar %>
     <%= yield %>
+    <%= render partial:'layouts/alerts' %>
+    
   </body>
 </html>
